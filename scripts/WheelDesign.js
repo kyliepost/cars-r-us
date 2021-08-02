@@ -7,7 +7,7 @@ export const WheelDesign = () => {
 
     const listItems = wheels.map(wheel => {
         return `<li>
-            <input type="radio" name="wheel" value="${wheel.id}" /> ${wheel.carets}
+            <input type="radio" name="wheel" value="${wheel.id}" /> ${wheel.size} in. ${wheel.color}
         </li>`
     })
 

@@ -7,7 +7,7 @@ export const PaintDesign = () => {
 
     const listItems = paints.map(paint => {
         return `<li>
-            <input type="radio" name="paint" value="${paint.id}" /> ${paint.carets}
+            <input type="radio" name="paint" value="${paint.id}" /> ${paint.color}
         </li>`
     })
 
