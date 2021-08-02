@@ -1,4 +1,5 @@
 const database = {
+    orderBuilder: {},
     paints: [ {
         id: 1,
         color: "Silver",
@@ -111,4 +112,16 @@ export const getWheels = () => {
 
 export const getCustomOrders = () => {
     return database.customOrders.map(customOrder => ({...customOrder}))
+}
+export const setWheel = (wheelId) => {
+    database.orderBuilder.wheelId = wheelId
+}
+export const setPaint = (paintId) => {
+    database.orderBuilder.paintId = paintId
+}
+export const setInterior = (interiorId) => {
+    database.orderBuilder.interiorId = interiorId
+}
+export const setDeal = (dealId) => {
+    database.orderBuilder.dealId = dealId
 }
