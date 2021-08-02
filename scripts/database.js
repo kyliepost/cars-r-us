@@ -1,5 +1,5 @@
-const database = [
-    paints = {
+const database = {
+    paints: [ {
         id: 1,
         color: "Silver",
         price: 200.00
@@ -18,8 +18,8 @@ const database = [
         id: 4,
         color: "Spring Green",
         price: 300.00
-    },
-    interiors = {
+    }],
+    interiors: [{
         id: 1,
         material: "Fabric",
         color: "Beige",
@@ -42,8 +42,8 @@ const database = [
         material: "Leather",
         color: "Black",
         price: 500.00
-    },
-    packages = {
+    }],
+    deals: [{
         id: 1,
         name: "Basic",
         price: 900.00
@@ -62,8 +62,8 @@ const database = [
         id: 4,
         name: "Ultra",
         price: 2500.00
-    },
-    wheels = {
+    }],
+    wheels: [{
         id: 1,
         size: 17,
         color: "Silver",
@@ -86,8 +86,8 @@ const database = [
         size: 18,
         color: "Black",
         price: 1500.00
-    },
-]
+    }],
+}
 
 export const getPaints = () => {
     return database.paints.map(paint => ({...paint}))
@@ -95,8 +95,8 @@ export const getPaints = () => {
 export const getInteriors = () => {
     return database.interiors.map(interior => ({...interior}))
 }
-export const getPackages = () => {
-    return database.packages.map(package => ({...package}))
+export const getDeals = () => {
+    return database.deals.map(deal => ({...deal}))
 }
 export const getWheels = () => {
     return database.wheels.map(wheel => ({...wheel}))
