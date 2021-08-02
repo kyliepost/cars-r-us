@@ -1,6 +1,6 @@
 import { PaintDesign } from "./PaintDesign.js"
 import { InteriorDesign } from "./InteriorDesign.js"
-import { PackageDesign } from "./PackageDesign.js"
+import { DealDesign } from "./DealDesign.js"
 import { WheelDesign } from "./WheelDesign.js"
 
 export const CarsRUs = () => {
@@ -18,7 +18,7 @@ export const CarsRUs = () => {
             </section>
             <section class="packageOptions choices">
                 <h2>Packages</h2>
-                ${PackageDesign()}
+                ${DealDesign()}
             </section>
             <section class="wheelOptions choices">
                 <h2>Wheels</h2>
