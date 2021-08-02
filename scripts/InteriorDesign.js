@@ -7,7 +7,7 @@ export const InteriorDesign = () => {
 
     const listItems = interiors.map(interior => {
         return `<li>
-            <input type="radio" name="interior" value="${interior.id}" /> ${interior.carets}
+            <input type="radio" name="interior" value="${interior.id}" /> ${interior.material}
         </li>`
     })
 

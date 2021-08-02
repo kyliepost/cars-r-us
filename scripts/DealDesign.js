@@ -7,7 +7,7 @@ export const DealDesign = () => {
 
     const listItems = deals.map(deal => {
         return `<li>
-            <input type="radio" name="deal" value="${deal.id}" /> ${deal.carets}
+            <input type="radio" name="deal" value="${deal.id}" /> ${deal.name}
         </li>`
     })
 

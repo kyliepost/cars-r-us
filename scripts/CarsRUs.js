@@ -16,7 +16,7 @@ export const CarsRUs = () => {
                 <h2>Interior</h2>
                 ${InteriorDesign()}
             </section>
-            <section class="packageOptions choices">
+            <section class="dealOptions choices">
                 <h2>Packages</h2>
                 ${DealDesign()}
             </section>
