@@ -1,6 +1,17 @@
-import { getDeals } from "./database.js"
+import { getDeals, setDeal } from "./database.js"
 
 const deals = getDeals()
+
+document.addEventListener(
+    "change",
+    (event) => {
+        if (event.target.name === "deal") {
+            setDeal(parseInt(event.target.value))
+            window.alert(event.target.value)
+        }
+    }
+)
+
 
 export const DealDesign = () => {
     let html = "<ul>"
