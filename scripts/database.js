@@ -1,4 +1,4 @@
-options = [
+const database = [
     paints = {
         id: 1,
         color: "Silver",

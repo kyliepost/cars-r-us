@@ -8,22 +8,27 @@ export const CarsRUs = () => {
         <h1>Cars-R-Us</h1>
 
         <article class="options">
-            <section class="paintColors">
+            <section class="paintColors choices">
                 <h2>Paint Colors</h2>
                 ${PaintDesign()}
             </section>
-            <section class="interiorOptions">
+            <section class="interiorOptions choices">
                 <h2>Interior</h2>
                 ${InteriorDesign()}
             </section>
-            <section class="packageOptions">
+            <section class="packageOptions choices">
                 <h2>Packages</h2>
                 ${PackageDesign()}
             </section>
-            <section class="wheelOptions">
+            <section class="wheelOptions choices">
                 <h2>Wheels</h2>
                 ${WheelDesign()}
             </section>
+
+            <article>
+            <button id="orderButton">Create Custom Order</button>
+        </article>
+
         </article>
     `
 }
