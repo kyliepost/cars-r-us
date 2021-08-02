@@ -87,6 +87,13 @@ const database = {
         color: "Black",
         price: 1500.00
     }],
+    customOrders: [{
+        id: 1,
+        paintId: 2,
+        interiorId: 4,
+        dealId: 3,
+        wheelId: 4,
+    }]
 }
 
 export const getPaints = () => {
@@ -100,4 +107,8 @@ export const getDeals = () => {
 }
 export const getWheels = () => {
     return database.wheels.map(wheel => ({...wheel}))
+}
+
+export const getCustomOrders = () => {
+    return database.customOrders.map(customOrder => ({...customOrder}))
 }
