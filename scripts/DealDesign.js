@@ -7,7 +7,6 @@ document.addEventListener(
     (event) => {
         if (event.target.name === "deal") {
             setDeal(parseInt(event.target.value))
-            window.alert(event.target.value)
         }
     }
 )
