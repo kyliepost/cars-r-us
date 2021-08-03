@@ -7,7 +7,6 @@ document.addEventListener(
     (event) => {
         if (event.target.name === "wheel") {
             setWheel(parseInt(event.target.value))
-            window.alert(event.target.value)
         }
     }
 )
