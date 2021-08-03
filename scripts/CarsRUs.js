@@ -2,6 +2,18 @@ import { PaintDesign } from "./PaintDesign.js"
 import { InteriorDesign } from "./InteriorDesign.js"
 import { DealDesign } from "./DealDesign.js"
 import { WheelDesign } from "./WheelDesign.js"
+import { Orders } from "./Orders.js"
+import { addCustomOrder } from "./database.js"
+
+
+document.addEventListener(
+    "click",
+    (event) => {
+        if (event.target.id === "orderButton") {
+            addCustomOrder()
+        }
+    }
+)
 
 export const CarsRUs = () => {
     return `
@@ -28,6 +40,11 @@ export const CarsRUs = () => {
             <article>
             <button id="orderButton">Create Custom Order</button>
         </article>
+
+        <article class="customOrders">
+        <h2>Custom Jewelry Orders</h2>
+        ${Orders()}
+    </article>
 
         </article>
     `
